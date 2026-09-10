@@ -1,0 +1,176 @@
+```html
+<!DOCTYPE html>
+<html lang="es" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar Sesión | ModaUrban21</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-950 text-white min-h-screen flex items-center justify-center px-4">
+
+    <div class="w-full max-w-md">
+
+        <!-- LOGO -->
+        <div class="text-center mb-8">
+
+            <div class="flex justify-center items-center gap-3 mb-4">
+
+                <div class="w-10 h-10 bg-emerald-500 rounded-lg
+                            flex items-center justify-center
+                            font-black text-black text-xl">
+                    M
+                </div>
+
+                <span class="font-bold text-2xl tracking-wider">
+                    ModaUrban<span class="text-emerald-400">21</span>
+                </span>
+
+            </div>
+
+            <h1 class="text-3xl font-black">
+                Iniciar Sesión
+            </h1>
+
+            <p class="text-zinc-400 mt-2">
+                Ingresa a tu cuenta de ModaUrban21
+            </p>
+
+        </div>
+
+
+        <!-- FORMULARIO -->
+        <div class="bg-zinc-900 border border-zinc-800
+                    rounded-3xl p-8 shadow-2xl">
+
+            <form>
+
+                <!-- CORREO -->
+                <div class="mb-5">
+
+                    <label
+                        for="email"
+                        class="block text-sm font-semibold text-zinc-300 mb-2">
+                        Correo electrónico
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="ejemplo@gmail.com"
+                        required
+                        class="w-full bg-zinc-800 border border-zinc-700
+                               rounded-xl px-4 py-3 text-white
+                               outline-none
+                               focus:border-emerald-400
+                               transition">
+                </div>
+
+
+                <!-- CONTRASEÑA -->
+                <div class="mb-5">
+
+                    <label
+                        for="password"
+                        class="block text-sm font-semibold text-zinc-300 mb-2">
+                        Contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Ingresa tu contraseña"
+                        required
+                        class="w-full bg-zinc-800 border border-zinc-700
+                               rounded-xl px-4 py-3 text-white
+                               outline-none
+                               focus:border-emerald-400
+                               transition">
+                </div>
+
+
+                <!-- RECORDAR / RECUPERAR -->
+                <div class="flex items-center justify-between mb-6">
+
+                    <label class="flex items-center gap-2 text-sm text-zinc-400">
+
+                        <input
+                            type="checkbox"
+                            class="accent-emerald-400">
+
+                        Recordarme
+
+                    </label>
+
+                    <a
+                        href="#"
+                        class="text-sm text-emerald-400 hover:text-emerald-300">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+
+                </div>
+
+
+                <!-- BOTÓN -->
+                <button
+                    type="submit"
+                    class="w-full bg-emerald-400
+                           text-black font-bold
+                           py-3.5 rounded-xl
+                           hover:bg-emerald-300
+                           transition">
+
+                    Iniciar Sesión
+
+                </button>
+
+            </form>
+
+
+            <!-- REGISTRO -->
+            <div class="border-t border-zinc-800 mt-7 pt-6 text-center">
+
+                <p class="text-zinc-400 text-sm">
+
+                    ¿No tienes una cuenta?
+
+                    <a
+                        href="#"
+                        class="text-emerald-400 font-semibold
+                               hover:text-emerald-300">
+
+                        Crear cuenta
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- VOLVER -->
+        <div class="text-center mt-6">
+
+            <a
+                href="index.html"
+                class="text-zinc-400 hover:text-emerald-400 text-sm">
+
+                ← Volver a la tienda
+
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+```
