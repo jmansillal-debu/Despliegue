@@ -10,31 +10,58 @@
 <body class="bg-zinc-950 text-white font-sans antialiased min-h-screen flex flex-col justify-between">
 
   <!-- ========================================================================= -->
-  <!-- GUÍA RÁPIDA DE GIT PARA EL PROYECTO -->
+  <!-- PASO 1: PASO OBLIGATORIO PARA QUE APAREZCA EL NOMBRE DE CADA UNO EN GIT -->
   <!-- 
-    PASO 1: CONECTAR EL PROYECTO DESDE CERO A GITHUB (Solo se hace la primera vez)
-    1. git init                                    -> Inicializa la carpeta como repositorio de Git.
-    2. git add .                                   -> Añade todos los archivos (incluyendo este index.html).
-    3. git commit -m "first commit: proyecto inicial de ModaUrban21" -> Guarda la primera versión del código.
-    4. git branch -M main                          -> Asegura que la rama principal se llame 'main'.
-    5. git remote add origin URL_DE_TU_REPOSITORIO -> Conecta tu carpeta con el enlace de GitHub.
-    6. git push -u origin main                     -> Sube todo el código a GitHub por primera vez.
+    Cada integrante debe abrir su terminal en VS Code y ejecutar estas 2 líneas 
+    con su propio nombre y su correo de GitHub antes de hacer cualquier commit:
 
-    PASO 2: SUBIR ACTUALIZACIONES O CAMBIOS QUE HAGA CUALQUIER INTEGRANTE
-    1. (Realizar los cambios necesarios en el código)
-    2. git add .                                   -> Prepara todos los cambios realizados.
-    3. git commit -m "feat: actualiza el diseño de la tienda" -> Registra el cambio con un mensaje claro.
-    4. git push origin main                        -> Sube la nueva actualización a GitHub.
+    * EFRAÍN PACO:
+      git config user.name "Efraín Paco"
+      git config user.email "tu_correo_de_github@gmail.com"
+
+    * FERNANDO MANSILLA:
+      git config user.name "Fernando Mansilla"
+      git config user.email "tu_correo_de_github@gmail.com"
+
+    * FRANCO MAYHUIRE:
+      git config user.name "Franco Mayhuire"
+      git config user.email "tu_correo_de_github@gmail.com"
+
+    * LEONELA CANQUI:
+      git config user.name "Leonela Canqui"
+      git config user.email "tu_correo_de_github@gmail.com"
+  -->
+  <!-- ========================================================================= -->
+
+  <!-- ========================================================================= -->
+  <!-- PASO 2: CONECTAR EL PROYECTO A GITHUB (Solo la primera vez) -->
+  <!-- 
+    1. git init
+    2. git add .
+    3. git commit -m "Tienda ModaUrban21 - INICIO"
+    4. git branch -M main
+    5. git remote add origin URL_DE_TU_REPOSITORIO_GITHUB
+    6. git push -u origin main
+  -->
+  <!-- ========================================================================= -->
+
+  <!-- ========================================================================= -->
+  <!-- PASO 3: CÓMO SUBIR CADA CAMBIO O MOVIMIENTO QUE HAGAN -->
+  <!-- 
+    1. Editar el HTML según su sección.
+    2. git add .
+    3. git commit -m "feat: actualizacion realizada por [Tu Nombre]"
+    4. git push origin main
   -->
   <!-- ========================================================================= -->
 
 
   <!-- ========================================================================= -->
   <!-- 1. HEADER Y NAVEGACIÓN -->
-  <!-- INTEGRANTE ASIGNADO: Efraín Paco -->
+  <!-- INTEGRANTE: Efraín Paco -->
   <!-- 
-    TAREA TÉCNICA SUGERIDA PARA EFRAÍN:
-    - Cambiar el texto del botón "Iniciar Sesión" por "Mi Cuenta" o agregar un enlace extra en el nav.
+    TAREA PARA EFRAÍN:
+    - Cambiar el texto del botón "Iniciar Sesión" por "Mi Cuenta".
   -->
   <!-- ========================================================================= -->
   <header class="bg-zinc-950/90 border-b border-zinc-800 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
@@ -61,48 +88,65 @@
 
 
   <!-- ========================================================================= -->
-  <!-- 2. SECCIÓN HERO / BANNER PRINCIPAL -->
-  <!-- INTEGRANTE ASIGNADO: Fernando Mansilla -->
-  <!-- 
-    TAREA TÉCNICA SUGERIDA PARA FERNANDO:
-    - Modificar el texto secundario o cambiar el texto del botón "Conócenos" por "Ver Ofertas".
-  -->
-  <!-- ========================================================================= -->
-  <main class="max-w-7xl mx-auto px-6 py-12 lg:py-16 w-full space-y-20 flex-grow">
-    
-    <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- 2. SECCIÓN HERO / BANNER PRINCIPAL -->
+    <!-- INTEGRANTE: Fernando Mansilla -->
+    <!-- RAMA DE GIT: feature/hero-banner -->
+    <!-- ========================================================================= -->
+    <section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-6">
       <div class="space-y-6">
-        <span class="bg-zinc-900 text-emerald-400 border border-emerald-500/30 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider inline-block">
-          Colección 2026
-        </span>
-        <h1 class="text-4xl sm:text-5xl font-black tracking-tight leading-none text-white">
+        
+        <!-- Insignia destacada -->
+        <div class="inline-flex items-center gap-2 bg-zinc-900 border border-emerald-500/30 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-full uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Colección Exclusiva 2026
+        </div>
+
+        <!-- Título principal -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-none text-white">
           Streetwear & <br><span class="text-emerald-400">Cyber Aesthetics</span>
         </h1>
-        <p class="text-zinc-400 text-base max-w-lg leading-relaxed">
-          Descubre la nueva línea de ropa urbana, techwear y piezas exclusivas diseñadas con el estilo más limpio y vanguardista.
+
+        <!-- Descripción corta -->
+        <p class="text-zinc-400 text-base sm:text-lg max-w-lg leading-relaxed">
+          Descubre la nueva línea de ropa urbana, techwear y piezas de edición limitada diseñadas con el estilo más limpio y vanguardista.
         </p>
+
+        <!-- Botones de Acción (CTA) -->
         <div class="flex flex-wrap gap-4 pt-2">
-          <a href="#catalogo" class="bg-emerald-500 hover:bg-emerald-600 text-black font-bold px-6 py-3 rounded-xl transition">
+          <a href="#catalogo" class="bg-emerald-500 hover:bg-emerald-400 text-black font-extrabold px-6 py-3.5 rounded-xl transition shadow-lg shadow-emerald-500/10">
             Explorar Catálogo
           </a>
-          <a href="#contacto" class="bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-300 font-semibold px-6 py-3 rounded-xl transition">
-            Conócenos
+          <a href="#contacto" class="bg-zinc-900 border border-zinc-800 hover:bg-zinc-800 text-zinc-300 font-semibold px-6 py-3.5 rounded-xl transition">
+            Ver Ofertas
           </a>
         </div>
+
+        <!-- Beneficios rápidos -->
+        <div class="pt-4 border-t border-zinc-900 grid grid-cols-2 gap-4 text-xs text-zinc-400">
+          <div class="flex items-center gap-2">
+            <span class="text-emerald-400 font-bold">✓</span> Envío gratis en Arequipa
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-emerald-400 font-bold">✓</span> Stock limitado 2026
+          </div>
+        </div>
+
       </div>
 
-      <div class="relative">
-        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000" alt="Hero ModaUrban21" class="rounded-2xl w-full h-[380px] object-cover border border-zinc-800 shadow-xl">
+      <!-- Imagen Destacada del Hero -->
+      <div class="relative group">
+        <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-emerald-900 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1000" alt="Hero ModaUrban21" class="relative rounded-2xl w-full h-[400px] object-cover border border-zinc-800 shadow-2xl">
       </div>
     </section>
 
 
     <!-- ======================================================================= -->
     <!-- 3. SECCIÓN CATÁLOGO / REJILLA DE PRODUCTOS -->
-    <!-- INTEGRANTE ASIGNADO: Franco Mayhuire -->
+    <!-- INTEGRANTE: Franco Mayhuire -->
     <!-- 
-      TAREA TÉCNICA SUGERIDA PARA FRANCO:
-      - Actualizar el precio de alguna prenda o cambiar el texto "Agregar" por "Añadir al Carrito".
+      TAREA PARA FRANCO:
+      - Cambiar el precio de la primera prenda por S/ 160.00.
     -->
     <!-- ======================================================================= -->
     <section id="catalogo" class="w-full">
@@ -160,10 +204,10 @@
 
   <!-- ========================================================================= -->
   <!-- 4. FOOTER Y CONTACTO -->
-  <!-- INTEGRANTE ASIGNADO: Leonela Canqui -->
+  <!-- INTEGRANTE: Leonela Canqui -->
   <!-- 
-    TAREA TÉCNICA SUGERIDA PARA LEONELA:
-    - Agregar un número telefónico de contacto o un enlace a redes sociales debajo del correo.
+    TAREA PARA LEONELA:
+    - Agregar el número de teléfono debajo del correo electrónico.
   -->
   <!-- ========================================================================= -->
   <footer id="contacto" class="border-t border-zinc-800 bg-zinc-950 py-10 px-6">
